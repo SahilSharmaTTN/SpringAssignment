@@ -1,8 +1,5 @@
 package com.sahil.SpringAssignment.Question4;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Users {
 
     private Integer id;
@@ -11,6 +8,7 @@ public class Users {
     private Integer age;
 
     public Users(Integer id, String name, String competency, Integer age) {
+        super();
         this.id = id;
         this.name = name;
         this.competency = competency;
@@ -47,5 +45,10 @@ public class Users {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "ID:" +this.id +" Name : " + this.name +" Age :" +this.age +" Competency: " +this.competency;
     }
 }

@@ -1,7 +1,9 @@
 package com.sahil.SpringAssignment.Question2;
 
-public class BinarySearch {
+import org.springframework.stereotype.Component;
 
+@Component
+public class BinarySearch {
     SortingAlgorithm sortingAlgorithm;
 
     public BinarySearch(SortingAlgorithm sortingAlgorithm){
